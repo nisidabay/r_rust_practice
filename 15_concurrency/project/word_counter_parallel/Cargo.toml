@@ -1,0 +1,9 @@
+[package]
+name = "word_counter_parallel"
+version = "0.1.0"
+edition = "2021"
+description = "Parallel word counter — counts word frequencies using multiple threads"
+
+[[bin]]
+name = "word_counter_parallel"
+path = "src/main.rs"

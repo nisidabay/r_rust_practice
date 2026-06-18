@@ -1,0 +1,5 @@
+[package]
+name = "json_tokenizer"
+version = "0.1.0"
+edition = "2021"
+description = "A JSON tokenizer that demonstrates ownership transfer through parse stages"

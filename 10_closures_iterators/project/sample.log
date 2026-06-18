@@ -1,0 +1,30 @@
+2025-06-18 08:15:32 [INFO] Application starting
+2025-06-18 08:15:33 [DEBUG] Initializing configuration module
+2025-06-18 08:15:34 [INFO] Connected to database at localhost:5432
+2025-06-18 08:15:35 [INFO] Loading user module
+2025-06-18 08:16:01 [WARN] Slow query detected: SELECT * FROM users (took 1.2s)
+2025-06-18 08:16:02 [INFO] User module loaded successfully
+2025-06-18 08:16:05 [ERROR] Failed to connect to cache server at 10.0.0.1:6379: Connection refused
+2025-06-18 08:16:06 [WARN] Running in degraded mode without caching
+2025-06-18 08:16:10 [INFO] Processing incoming request #1234
+2025-06-18 08:16:11 [DEBUG] Request payload: {"action": "login", "user": "alice"}
+2025-06-18 08:16:12 [INFO] User alice authenticated successfully
+2025-06-18 08:16:15 [INFO] Processing incoming request #1235
+2025-06-18 08:16:16 [ERROR] Request #1235 failed: Invalid session token
+2025-06-18 08:16:17 [WARN] Rate limit approaching for IP 192.168.1.100
+2025-06-18 08:16:20 [INFO] Processing incoming request #1236
+2025-06-18 08:16:22 [INFO] Request #1236 completed in 1.8s
+2025-06-18 08:16:25 [ERROR] Disk usage at 92% on /dev/sda1
+2025-06-18 08:16:26 [WARN] Memory pressure: 78% of 16GB used
+2025-06-18 08:16:30 [INFO] Health check passed
+2025-06-18 08:17:01 [ERROR] Connection pool exhausted: max 10 connections reached
+2025-06-18 08:17:02 [INFO] Connection released, pool now at 9
+2025-06-18 08:17:05 [DEBUG] Garbage collection cycle completed in 45ms
+2025-06-18 08:17:10 [INFO] Scheduled backup starting
+2025-06-18 08:17:15 [INFO] Backup completed successfully (1.2GB in 5.1s)
+2025-06-18 08:17:20 [ERROR] SSL certificate will expire in 7 days
+2025-06-18 08:17:25 [WARN] Certificate renewal recommended for *.example.com
+2025-06-18 08:17:30 [INFO] Application shutdown initiated
+2025-06-18 08:17:31 [INFO] Closing database connections
+2025-06-18 08:17:32 [INFO] Cache flushed
+2025-06-18 08:17:33 [INFO] Application shutdown complete

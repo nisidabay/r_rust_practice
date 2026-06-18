@@ -1,0 +1,7 @@
+[package]
+name = "grocery_list"
+version = "0.1.0"
+edition = "2021"
+description = "A CLI grocery list manager — add, list, remove, clear items"
+
+[dependencies]

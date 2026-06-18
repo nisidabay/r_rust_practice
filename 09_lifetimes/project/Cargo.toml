@@ -1,0 +1,5 @@
+[package]
+name = "html_builder"
+version = "0.1.0"
+edition = "2021"
+description = "A safe HTML builder using lifetimes — build HTML by passing &str references"

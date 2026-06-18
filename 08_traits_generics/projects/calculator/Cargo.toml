@@ -1,0 +1,9 @@
+[package]
+name = "calculator"
+version = "0.1.0"
+edition = "2021"
+description = "A generic calculator that works with i32, f64, and complex numbers."
+
+[[bin]]
+name = "calculator"
+path = "src/main.rs"
