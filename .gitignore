@@ -1,0 +1,17 @@
+# Rust build artifacts
+/target/
+**/*.rs.bk
+
+# Executables compiled directly with rustc
+*.exe
+*.out
+
+# Editor artifacts
+*.swp
+*.swo
+*~
+._*
+.DS_Store
+
+# macOS
+.DS_Store
