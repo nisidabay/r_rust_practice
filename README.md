@@ -1,72 +1,66 @@
-# Rust Practice — From Zero to Real Programs
+# Practical Rust
 
-> The one question: **How does Rust give you C-level control with memory safety?**
-
-A progressive, code-first curriculum for learning Rust through CLI programs.
-No frameworks, no `cargo add` — just the standard library, `rustc`, and real problems.
+> Aprende Rust como herramienta, no como religión. **Code first. Theory on demand.**
 
 ```bash
-# Clone, compile, learn
 git clone git@github.com:nisidabay/r_rust_practice.git
 cd r_rust_practice
-rustc --edition 2021 01_hello_types/concept/01_hello.rs -o /tmp/hello && /tmp/hello
+rustc --edition 2021 01_hello/concept/01_hello.rs -o /tmp/hello && /tmp/hello
 ```
 
-## The Learning Path
+---
 
-| # | Group | One Question | Concepts | Exercises | Project |
-|---|-------|-------------|----------|-----------|---------|
-| 01 | `01_hello_types/` | What is a Rust program — and what lives in memory? | 6 | 4 | counter |
-| 02 | `02_control_flow/` | How does Rust decide what runs next? | 7 | 4 | quiz |
-| 03 | `03_ownership/` | Who owns the data — and what happens when they're done? | 7 | 4 | json_tokenizer |
-| 04 | `04_structs_enums/` | How do you shape your own data types? | 9 | 4 | task_list |
-| 05 | `05_collections/` | What do you reach for when you need more than one value? | 8 | 4 | grocery_list |
-| 06 | `06_pattern_matching/` | How do you safely unpack any shape of data? | 7 | 4 | json_query |
-| 07 | `07_error_handling/` | How do you handle things that can go wrong — without panicking? | 8 | 4 | todo |
-| 08 | `08_traits_generics/` | How do you write code that works with *any* type? | 10 | 4 | — |
-| 09 | `09_lifetimes/` | How long does each reference live — and who decides? | 7 | 4 | html_builder |
-| 10 | `10_closures_iterators/` | How do you pass behavior around — cheaply and safely? | 9 | 4 | log_analyzer |
-| 11 | `11_modules_crates/` | How do you grow your program without drowning in one file? | 8 | 4 | file_organizer |
-| 12 | `12_testing/` | How do you know your code works — and stays working? | 7 | 4 | calc |
-| 13 | `13_io_filesystem/` | How does Rust talk to the outside world? | 8 | 5 | snippets |
-| 14 | `14_smart_pointers/` | What happens when ownership rules are too strict? | 7 | 4 | todo_graph |
-| 15 | `15_concurrency/` | How do you run code in parallel — safely? | 10 | 4 | word_counter_parallel |
-| 16 | `16_unsafe_ffi/` | What do you do when you need to break the rules? | 8 | 4 | hex_dump |
-| 17 | `17_macros/` | How do you write code that writes code? | 7 | 4 | macro_madness |
-| 18 | `18_async/` | How do you handle many things at once — without threads? | 6 | 4 | fetch_multi |
+## Philosophy
 
-**Total: 129 concept files · 71 exercises · 17 projects**
+Every file answers one question: **"How do I do X in Rust?"**
 
-## How to Use This Repo
+Not "here's everything about X." Not "first, let me explain generics vs trait objects." Just code that works, a short explanation, and a project that ties it all together.
 
-Each group is self-contained. Start at 01 and work forward — every group builds on the last.
+If you want the full theory, the books are listed in `REFERENCES.md`. This course is the **fast path** — the 20% of Rust that does 80% of the work.
+
+The structure is the same as [Practical C](https://github.com/nisidabay/curso_c). Same questions, same project types — different language. Learn one, and you already know the path through the others.
+
+---
+
+## The Path (16 groups)
+
+| # | Group | One Question | Project |
+|---|-------|-------------|---------|
+| 01 | `01_hello/` | How do I print, read, and store things? | `wc` clone |
+| 02 | `02_data/` | What kinds of data can I store and convert? | Unit converter |
+| 03 | `03_control/` | How does Rust decide what runs next? | Number guessing game |
+| 04 | `04_ownership/` | Who owns the data — and what happens when they're done? | String sanitizer |
+| 05 | `05_references/` | How do I borrow data without stealing it? | JSON field extractor |
+| 06 | `06_structs/` | How do I bundle related data together? | Student gradebook |
+| 07 | `07_enums/` | How do I model "one of several possibilities"? | CLI dispatcher |
+| 08 | `08_collections/` | What do I reach for when I need more than one value? | Frequency counter |
+| 09 | `09_patterns/` | How do I safely unpack any shape of data? | Mini grep |
+| 10 | `10_errors/` | How do I handle things that can go wrong — without panicking? | File reader |
+| 11 | `11_traits/` | How do I define shared behavior across types? | Pretty printer |
+| 12 | `12_lifetimes/` | How long does each reference live — and who decides? | HTML builder |
+| 13 | `13_closures/` | How do I pass behavior around? | Pipeline filter |
+| 14 | `14_io/` | How does Rust talk to files and the outside world? | Log line counter |
+| 15 | `15_testing/` | How do I know my code works — and stays working? | Calculator with tests |
+| 16 | `16_capstone/` | How do all these pieces fit together? | Todo list manager |
+
+---
+
+## Quick Start
+
+Each group is self-contained. Start at 01 and work your way through:
 
 ```bash
-# Explore a group
-cd 03_ownership
-
-# Run a concept file
-rustc --edition 2021 concept/01_ownership.rs -o /tmp/ownership && /tmp/ownership
+# Run any concept file
+rustc --edition 2021 01_hello/concept/01_hello.rs -o /tmp/demo && /tmp/demo
 
 # Try the exercises
-cd exercises && make check
+cd 01_hello/exercises && make run
 
 # Build the project
-cd project && cargo run -- --help
+cd 01_hello/project && cargo run --
 ```
 
-## Prerequisites
-
-```bash
-rustc --version   # Should be ≥ 1.70 (edition 2021 support)
-cargo --version   # Comes with Rust — install via rustup
-```
-
-Install from https://rustup.rs/ or:
-```bash
-# Arch Linux
-sudo pacman -S rust
-```
+---
 
 ## Structure
 
@@ -74,8 +68,20 @@ sudo pacman -S rust
 NN_topic/
 ├── concept/        # Numbered .rs files — one concept at a time
 ├── exercises/      # Solved practice problems with Makefile
-│   └── Makefile    # make check compiles + runs everything
+│   └── Makefile    # make run compiles + runs everything
 └── project/        # One self-contained CLI mini-app (Cargo)
     ├── Cargo.toml
     └── src/main.rs
 ```
+
+---
+
+## Resources
+
+Book recommendations in [`REFERENCES.md`](REFERENCES.md).
+
+---
+
+## License
+
+Do whatever you want with this. It's a learning resource.

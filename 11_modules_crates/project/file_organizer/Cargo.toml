@@ -1,7 +1,0 @@
-[package]
-name = "file_organizer"
-version = "0.1.0"
-edition = "2021"
-description = "CLI tool that organizes files by extension into folders"
-
-[dependencies]

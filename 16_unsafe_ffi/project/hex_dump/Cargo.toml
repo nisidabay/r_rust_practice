@@ -1,8 +1,0 @@
-[package]
-name = "hex_dump"
-version = "0.1.0"
-edition = "2021"
-
-[[bin]]
-name = "hex_dump"
-path = "src/main.rs"

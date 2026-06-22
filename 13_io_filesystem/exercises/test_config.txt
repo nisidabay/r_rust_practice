@@ -1,5 +1,0 @@
-# Database config
-host = localhost
-port = 5432
-db_name = myapp
-debug = true

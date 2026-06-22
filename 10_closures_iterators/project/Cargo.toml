@@ -1,5 +1,0 @@
-[package]
-name = "log_analyzer"
-version = "0.1.0"
-edition = "2021"
-description = "CLI tool that reads a log file line by line, uses iterator chains to filter/count/sort entries"
