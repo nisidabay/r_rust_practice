@@ -6,16 +6,9 @@
 *.exe
 *.out
 
-# Cargo lockfiles in projects (track them for apps, but not for all)
-# Uncomment if you want to ignore lockfiles:
-# **/Cargo.lock
-
 # Editor artifacts
 *.swp
 *.swo
 *~
 ._*
-.DS_Store
-
-# macOS
 .DS_Store
