@@ -1,6 +1,6 @@
 # Practical Rust
 
-> Aprende Rust como herramienta, no como religión. **Code first. Theory on demand.**
+> Learn Rust as tool, not as religion. **Code first. Theory on demand.**
 
 ```bash
 git clone git@github.com:nisidabay/r_rust_practice.git
